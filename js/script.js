@@ -1,18 +1,5 @@
 	( function( $ ) {
 		
-		/*RETORNAR ARRIBA*/
-		$('.go-top').click(function(){
-			$('body, html').animate({
-				scrollTop: '0px'
-			}, 3000);
-		});
-		$(window).scroll(function(){
-			if( $(this).scrollTop() > 1000 ){
-				$('.go-top').slideDown(500);
-			} else {
-				$('.go-top').slideUp(500);
-			}
-		});
 		/*DESPLEGAR MENU*/
 		$("#open-menu").click(function(){
 			if($(window).width()<=768){
@@ -88,15 +75,6 @@
 		
 		/*INIT WOW*/
 		new WOW().init();
-		/*SLIDER DISENOS*/
-		$("#slider-diseno").owlCarousel({
-			items : 4,
-			paginationSpeed : 2000,
-			loop:true,
-			transitionStyle : "fade",
-			autoPlay: 77700,
-			navigation : true
-		});
 		
 		/*SLIDER QUOTES*/
 		$("#slider-quote").owlCarousel({
